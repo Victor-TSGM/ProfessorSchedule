@@ -1,20 +1,21 @@
-package com.archweb.schedule.dtos;
+package com.example.ac2.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
 @Builder
-public class ProfessorDTO {
+public class ProfessoresDTO {
     private Integer id;
-    private String name;
+    private String nome;
     private String cpf;
     private String rg;
-    private String phone; // rua josé, 200 - sorocaba -sao paulo 18000000
-    private Integer addressId;
+    private String endereco;
+    private String celular;
 
+    private CursosDTO cursos;
 }
